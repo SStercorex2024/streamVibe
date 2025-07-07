@@ -20,7 +20,7 @@ export default defineConfig({
       svgrOptions: {},
     }, icons: {
       srcDir: "src/assets/icons", outDir: "assets/images", outName: "[dirname]", svgstoreOptions: {
-        cleanSymbols: ["fill", "stroke", "stroke-linejoin", "stroke-width"],
+        cleanSymbols: ["fill", "stroke"],
       },
     }, fonts: {
       outDir: "assets/fonts", outName: "[name]",

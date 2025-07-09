@@ -1,7 +1,7 @@
 import './Hero.scss'
 import Button from "@/components/Button";
 
-const Hero = (props) => {
+const Hero = () => {
   const titleId = 'hero-title'
   const playButtonTitle = 'Play Video'
   return (

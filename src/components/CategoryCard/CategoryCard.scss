@@ -1,7 +1,7 @@
 .category-card {
   --caregoryCardImagesOpacity: 1;
 
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   padding: fluid(30, 20);
   background-color: var(--color-black-10);
@@ -16,6 +16,10 @@
     --caregoryCardImagesOpacity: 0;
     color: var(--color-white);
     border-color: currentColor;
+  }
+
+  &:focus-visible {
+    outline-offset: -2px;
   }
 
   &__images {
@@ -39,6 +43,7 @@
     height: fluid(124, 68);
     object-fit: cover;
     border-radius: var(--border-radius-m);
+    user-select: none;
 
     @include laptop {
       border-radius: var(--border-radius-xs);

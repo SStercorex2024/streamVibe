@@ -2,6 +2,7 @@ import './Questions.scss'
 import Section from "@/layouts/Section";
 import Button from "@/components/Button";
 import AccordionGroup from "@/components/AccordionGroup";
+import Accordion from "@/components/Accordion";
 
 const Questions = () => {
   const questionsItems = [
@@ -14,11 +15,14 @@ const Questions = () => {
     'How do I contact StreamVibe customer support?',
     'What are the StreamVibe payment methods?',
   ]
+
+  const questionDescription = 'StreamVibe is a streaming service that allows you to watch movies and shows on demand.'
+
   return (
     <Section
       title="Frequently Asked Questions"
       titleId="Questions title"
-      descriptionId="Got questions? We've got answers! Check out our FAQ section to find answers to the most common questions about StreamVibe."
+      description="Got questions? We've got answers! Check out our FAQ section to find answers to the most common questions about StreamVibe."
       actions={
         <Button
           label="Ask a Question"
@@ -29,7 +33,17 @@ const Questions = () => {
       <AccordionGroup
         columns={2}
       >
-        {questionsItems}
+        {questionsItems.map((question, index) => (
+          <Accordion
+            title={question}
+            id={`question-${index}`}
+            name="question"
+            isOpen={index === 0}
+            key={index}
+          >
+            <p>{questionDescription}</p>
+          </Accordion>
+        ))}
       </AccordionGroup>
     </Section>
   )

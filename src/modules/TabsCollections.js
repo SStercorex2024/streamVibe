@@ -1,4 +1,5 @@
 import getParams from "@/utils/getParams";
+import pxToRem from "@/utils/pxToRem";
 
 const rootSelector = '[data-js-tabs]'
 
@@ -15,8 +16,8 @@ class Tabs {
   }
 
   stateCSSVariables = {
-    activeButtonWidth: '--tabsActiveButtonWidth',
-    activeButtonOffsetLeft: '--tabsActiveButtonOffsetLeft',
+    activeButtonWidth: '--tabsNavigationActiveButtonWidth',
+    activeButtonOffsetLeft: '--tabsNavigationActiveButtonOffsetLeft',
   }
 
   constructor(rootElement) {
@@ -32,9 +33,10 @@ class Tabs {
     }
     this.limitedTabsIndex = this.buttonElements.length - 1
     this.bindEvents()
+    setTimeout(this.bindObservers, 500)
   }
 
-  updateUi() {
+  updateUI() {
     const {activeTabIndex} = this.state
     this.buttonElements.forEach((buttonElement, index) => {
       const isActive = index === activeTabIndex
@@ -45,6 +47,10 @@ class Tabs {
       )
       buttonElement.ariaSelected = isActive
       buttonElement.tabIndex = isActive ? 0 : -1
+
+      if (isActive) {
+        this.updateNavigationCSSVars(buttonElement)
+      }
     })
 
     this.contentElements.forEach((contentElement, index) => {
@@ -54,15 +60,32 @@ class Tabs {
     })
   }
 
+  updateNavigationCSSVars(
+    activeButtonElement = this.buttonElements[this.state.activeTabIndex]
+  ) {
+    const {width, left} = activeButtonElement.getBoundingClientRect()
+    const offsetLeft = left - this.navigationElement.getBoundingClientRect().left
+
+    this.navigationElement.style.setProperty(
+      this.stateCSSVariables.activeButtonWidth,
+      `${pxToRem(width)}rem`
+    )
+
+    this.navigationElement.style.setProperty(
+      this.stateCSSVariables.activeButtonOffsetLeft,
+      `${pxToRem(offsetLeft)}rem`
+    )
+  }
+
   onButtonClick(buttonIndex) {
     this.state.activeTabIndex = buttonIndex
-    this.updateUi()
+    this.updateUI()
   }
 
 
   activateTab = (newTabIndex) => {
     this.state.activeTabIndex = newTabIndex
-    this.updateUi()
+    this.updateUI()
     this.buttonElements[newTabIndex].focus()
   }
 
@@ -132,6 +155,17 @@ class Tabs {
     })
     document.addEventListener('keydown', this.onKeyDown)
   }
+
+  onResize = () => {
+    this.updateNavigationCSSVars()
+  }
+
+  bindObservers = () => {
+    const resizeObserver = new ResizeObserver(this.onResize)
+
+    resizeObserver.observe(this.navigationElement)
+  }
+
 }
 
 class TabsCollection {

@@ -14,11 +14,12 @@ const SliderNavigation = (props) => {
   } = props
 
   return (
-    <div className={classNames(className, 'slider-navigation', {
-      [`slider-navigation--${mode}`]: mode,
-    })}
-         id={id}
-         data-js-slider-navigation=""
+    <div
+      className={classNames(className, 'slider-navigation', {
+        [`slider-navigation--${mode}`]: mode,
+      })}
+      id={id}
+      data-js-slider-navigation=""
     >
       <Button
         className="slider-navigation__arrow-button slider-navigation__arrow-button--previous"

@@ -4,7 +4,10 @@ import path from 'path'
 export default defineConfig({
   root: "", base: "/", public: "public", out: "dist", assets: {
     outDir: "assets", outName: "[name]", images: {
-      outDir: "assets/images", outName: "[name]", remoteName: "remote", optimize: {
+      outDir: "assets/images",
+      outName: "[name]",
+      remoteName: "remote",
+      optimize: {
         layout: "constrained",
         breakpoints: [320, 400, 640, 800, 1024, 1280, 1440, 1920, 2560, 2880, 3840,],
         resolution: [1, 2],
@@ -19,7 +22,10 @@ export default defineConfig({
     }, svgr: {
       svgrOptions: {},
     }, icons: {
-      srcDir: "src/assets/icons", outDir: "assets/images", outName: "[dirname]", svgstoreOptions: {
+      srcDir: "src/assets/icons",
+      outDir: "assets/images",
+      outName: "[dirname]",
+      svgstoreOptions: {
         cleanSymbols: ["fill", "stroke"],
       },
     }, fonts: {
@@ -59,7 +65,11 @@ export default defineConfig({
       }, less: {}, stylus: {},
     },
   }, markdown: {
-    useRemarkGfm: true, useRehypeHighlight: true, remarkGfmOptions: {}, rehypeHighlightOptions: {}, mdxOptions: {
+    useRemarkGfm: true,
+    useRehypeHighlight: true,
+    remarkGfmOptions: {},
+    rehypeHighlightOptions: {},
+    mdxOptions: {
       remarkPlugins: [], rehypePlugins: [],
     },
   }, search: {
@@ -71,10 +81,19 @@ export default defineConfig({
     trimTitle: "",
     targetSelector: "[data-search]",
     hit: {
-      minLength: 3, number: false, english: true, hiragana: false, katakana: true, kanji: true,
+      minLength: 3,
+      number: false,
+      english: true,
+      hiragana: false,
+      katakana: true,
+      kanji: true,
     },
   }, delivery: {
-    include: ["**/*"], exclude: ["/404"], trimTitle: "", sortBy: "path", archives: [],
+    include: ["**/*"],
+    exclude: ["/404"],
+    trimTitle: "",
+    sortBy: "path",
+    archives: [],
   }, beautify: {
     useHtml: true, useAssets: false, htmlOptions: {
       indent_size: 2,

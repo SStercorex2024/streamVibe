@@ -10,7 +10,8 @@ const Icon = (props) => {
 
   } = props;
   return (
-    <span className={classNames(className, 'icon')}
+    <span
+      className={classNames(className, 'icon')}
     >
       <MinistaIcon
         fill={hasFill ? 'currentColor' : 'none'}

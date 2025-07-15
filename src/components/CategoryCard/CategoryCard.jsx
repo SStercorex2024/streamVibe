@@ -24,8 +24,8 @@ const CategoryCard = (props) => {
           {title}
         </h3>
         <Icon
-        className="category-card__icon"
-        name="arrow-right"
+          className="category-card__icon"
+          name="arrow-right"
         />
       </div>
     </a>

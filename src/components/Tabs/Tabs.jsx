@@ -1,6 +1,7 @@
 import './Tabs.scss'
 import classNames from "classnames";
-import getTabsElementsIdFromTitle from "@/components/Tabs/utils/getTabsElementsIdFromTitle";
+import getTabsElementsIdFromTitle
+  from "@/components/Tabs/utils/getTabsElementsIdFromTitle";
 import TabsNavigation from "@/components/Tabs/components/TabsNavigation";
 
 const Tabs = (props) => {
@@ -20,8 +21,8 @@ const Tabs = (props) => {
     >
       {!navigationTargetElementId && (
         <TabsNavigation
-        title={title}
-        items={items}
+          title={title}
+          items={items}
         />
       )}
       <div className="tabs__body">

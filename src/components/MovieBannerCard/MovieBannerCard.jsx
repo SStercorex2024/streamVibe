@@ -1,4 +1,5 @@
 import './MovieBannerCard.scss'
+import {Image} from "minista";
 import Button from "@/components/Button";
 
 const MovieBannerCard = (props) => {
@@ -16,9 +17,7 @@ const MovieBannerCard = (props) => {
         className="movies-banner-card__image"
         src={imgSrc}
       />
-      <div
-        className="movies-banner-card__inner"
-      >
+      <div className="movies-banner-card__inner">
         <div className="movies-banner-card__body">
           <div className="movies-banner-card__title h3">
             {title}
@@ -29,7 +28,7 @@ const MovieBannerCard = (props) => {
         </div>
         <footer className="movies-banner-card__footer">
           <Button
-            className="movie-banner-card__button"
+            className="movies-banner-card__play-button"
             label="Play Now"
             iconName="play"
           />
@@ -57,7 +56,6 @@ const MovieBannerCard = (props) => {
       </div>
     </div>
   )
-
 }
 
 export default MovieBannerCard

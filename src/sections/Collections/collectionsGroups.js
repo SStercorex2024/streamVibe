@@ -173,7 +173,7 @@ const collectionsGroups = [
             ],
           },
         ],
-        sliderParams:{
+        sliderParams: {
           slidesPerView: 4,
           slidesPerGroup: 4,
           spaceBetween: 30,
@@ -200,6 +200,131 @@ const collectionsGroups = [
             }
           }
         }
+      },
+      {
+        title: 'Trending Now',
+        categoryItems: [
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/1.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+          {
+            title: 'Jaan',
+            imgSrc: '/src/assets/images/movies/2.jpg',
+            duration: '1h 57min',
+            views: '1.5K',
+          },
+          {
+            title: 'Mangal',
+            imgSrc: '/src/assets/images/movies/3.jpg',
+            duration: '2h 10min',
+            views: '1.8K',
+          },
+          {
+            title: 'Pathan',
+            imgSrc: '/src/assets/images/movies/4.jpg',
+            duration: '2h 20min',
+            views: '3K',
+          },
+          {
+            title: 'Anti-man',
+            imgSrc: '/src/assets/images/movies/5.jpg',
+            duration: '1h 42min',
+            views: '5K',
+          },
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/1.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+          {
+            title: 'Jaan',
+            imgSrc: '/src/assets/images/movies/2.jpg',
+            duration: '1h 57min',
+            views: '1.5K',
+          },
+          {
+            title: 'Mangal',
+            imgSrc: '/src/assets/images/movies/3.jpg',
+            duration: '2h 10min',
+            views: '1.8K',
+          },
+          {
+            title: 'Pathan',
+            imgSrc: '/src/assets/images/movies/4.jpg',
+            duration: '2h 20min',
+            views: '3K',
+          },
+          {
+            title: 'Anti-man',
+            imgSrc: '/src/assets/images/movies/5.jpg',
+            duration: '1h 42min',
+            views: '5K',
+          },
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/1.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+          {
+            title: 'Jaan',
+            imgSrc: '/src/assets/images/movies/2.jpg',
+            duration: '1h 57min',
+            views: '1.5K',
+          },
+          {
+            title: 'Mangal',
+            imgSrc: '/src/assets/images/movies/3.jpg',
+            duration: '2h 10min',
+            views: '1.8K',
+          },
+          {
+            title: 'Pathan',
+            imgSrc: '/src/assets/images/movies/4.jpg',
+            duration: '2h 20min',
+            views: '3K',
+          },
+          {
+            title: 'Anti-man',
+            imgSrc: '/src/assets/images/movies/5.jpg',
+            duration: '1h 42min',
+            views: '5K',
+          },
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/1.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+          {
+            title: 'Jaan',
+            imgSrc: '/src/assets/images/movies/2.jpg',
+            duration: '1h 57min',
+            views: '1.5K',
+          },
+          {
+            title: 'Mangal',
+            imgSrc: '/src/assets/images/movies/3.jpg',
+            duration: '2h 10min',
+            views: '1.8K',
+          },
+          {
+            title: 'Pathan',
+            imgSrc: '/src/assets/images/movies/4.jpg',
+            duration: '2h 20min',
+            views: '3K',
+          },
+          {
+            title: 'Anti-man',
+            imgSrc: '/src/assets/images/movies/5.jpg',
+            duration: '1h 42min',
+            views: '5K',
+          },
+        ]
       }
     ]
   },

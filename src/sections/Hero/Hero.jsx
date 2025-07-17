@@ -14,11 +14,12 @@ const Hero = () => {
             aria-label={playButtonTitle}
             title={playButtonTitle}
           >
-            <img className="hero__play-button-image"
-                 alt=""
-                 src="/play.svg"
-                 width={470}
-                 height={470}
+            <img
+              className="hero__play-button-image"
+              alt=""
+              src="/play.svg"
+              width={470}
+              height={470}
             />
           </button>
         </div>
@@ -30,10 +31,13 @@ const Hero = () => {
           </h1>
           <div className="hero__description">
             <p>
-              StreamVibe is the best streaming experience for watching your favorite movies and shows on demand,
+              StreamVibe is the best streaming experience for watching your
+              favorite movies and shows on demand,
               anytime,
-              anywhere. With StreamVibe, you can enjoy a wide variety of content, including the latest blockbusters,
-              classic movies, popular TV shows, and more. You can also create your own watchlists, so you can easily
+              anywhere. With StreamVibe, you can enjoy a wide variety of
+              content, including the latest blockbusters,
+              classic movies, popular TV shows, and more. You can also create
+              your own watchlists, so you can easily
               find
               the content you want to watch.
             </p>

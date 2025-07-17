@@ -7,7 +7,7 @@ const AccordionGroup = (props) => {
     children,
     isOrderedList = true,
   } = props
-  const itemsPerColumn = Math.ceil(children.length / columns )
+  const itemsPerColumn = Math.ceil(children.length / columns)
   const ListTag = isOrderedList ? 'ol' : 'ul'
 
   return (

@@ -8,9 +8,10 @@ const Grid = (props) => {
   } = props
 
   return (
-    <ul className={classNames('grid', {
-      [`grid--${columns}`]: columns > 1,
-    })}
+    <ul
+      className={classNames('grid', {
+        [`grid--${columns}`]: columns > 1,
+      })}
     >
       {children.map((child, index) => (
         <li

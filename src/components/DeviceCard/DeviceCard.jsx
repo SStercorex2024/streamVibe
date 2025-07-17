@@ -11,12 +11,14 @@ const DeviceCard = (props) => {
     <div className="device-card">
       <header className="device-card__header">
         <div className="device-card__image-wrapper">
-          <img className="device__card-image"
-               src={imgSrc}
-               alt=""
-               width={40}
-               height={40}
-               loading="lazy"/>
+          <img
+            className="device__card-image"
+            src={imgSrc}
+            alt=""
+            width={40}
+            height={40}
+            loading="lazy"
+          />
         </div>
         <h3 className="device-card__title h4">
           {title}

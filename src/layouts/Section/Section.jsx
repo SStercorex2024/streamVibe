@@ -18,8 +18,10 @@ const Section = (props) => {
     >
       <header className="section__header">
         <div className="section__info">
-          <h2 className="section__title h3"
-              id={titleId}>
+          <h2
+            className="section__title h3"
+            id={titleId}
+          >
             {title}
           </h2>
           {description && (
@@ -29,9 +31,10 @@ const Section = (props) => {
           )}
         </div>
         {actions && (
-          <div className={classNames('section__actions', {
-            'hidden-mobile': isActionsHiddenOnMobile,
-          })}
+          <div
+            className={classNames('section__actions', {
+              'hidden-mobile': isActionsHiddenOnMobile,
+            })}
           >
             {actions}
           </div>

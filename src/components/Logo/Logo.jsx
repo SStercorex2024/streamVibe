@@ -14,12 +14,13 @@ const Logo = (props) => {
       title={title}
       aria-label={title}
     >
-      <img src="/logo.svg"
-           alt=""
-           className="logo__img"
-           width={199}
-           height={60}
-           loading={loading}
+      <img
+        src="/logo.svg"
+        alt=""
+        className="logo__img"
+        width={199}
+        height={60}
+        loading={loading}
       />
     </a>
   )

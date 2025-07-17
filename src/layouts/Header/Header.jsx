@@ -29,9 +29,11 @@ const Header = (props) => {
   ]
 
   return (
-    <header className={classNames('header', {
-      'is-fixed': isFixed,
-    })} data-js-overlay-menu="">
+    <header
+      className={classNames('header', {
+        'is-fixed': isFixed,
+      })} data-js-overlay-menu=""
+    >
       <div className="header__inner container">
         <Logo
           className="header__logo"
@@ -45,9 +47,11 @@ const Header = (props) => {
             <ul className="header__menu-list">
               {menuItems.map(({label, href}, index) => (
                 <li className="header__menu-item" key={index}>
-                  <a className={classNames("header__menu-link", {
-                    'is-active': href === url
-                  })} href={href}>
+                  <a
+                    className={classNames("header__menu-link", {
+                      'is-active': href === url
+                    })} href={href}
+                  >
                     {label}
                   </a>
                 </li>
@@ -55,17 +59,19 @@ const Header = (props) => {
             </ul>
           </nav>
           <div className="header__actions">
-            <Button className="header__button"
-                    label="search"
-                    isLabelHidden
-                    mode="transparent"
-                    iconName="search"
+            <Button
+              className="header__button"
+              label="search"
+              isLabelHidden
+              mode="transparent"
+              iconName="search"
             />
-            <Button className="header__button"
-                    label="notifications"
-                    isLabelHidden
-                    mode="transparent"
-                    iconName="notification"
+            <Button
+              className="header__button"
+              label="notifications"
+              isLabelHidden
+              mode="transparent"
+              iconName="notification"
             />
           </div>
         </dialog>

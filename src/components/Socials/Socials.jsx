@@ -9,7 +9,8 @@ const Socials = (props) => {
   } = props
 
   return (
-    <div className={classNames(className, 'soc1al')}
+    <div
+      className={classNames(className, 'soc1al')}
     >
       <ul className="soc1als__list">
         {links.map(({label, iconName}, index) => (

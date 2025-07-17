@@ -1,11 +1,13 @@
 import './CategoryCard.scss'
 import {Image} from "minista";
 import Icon from "@/components/Icon";
+import Badge from "@/components/Badge";
 
 const CategoryCard = (props) => {
   const {
     title,
     images = [],
+    badge,
   } = props;
 
   return (
@@ -21,11 +23,20 @@ const CategoryCard = (props) => {
       </div>
       <div className="category-card__body">
         <h3 className="category-card__title">
-          {title}
+          {badge && (
+            <Badge
+              className="category-card__badge"
+              mode="red"
+              isBig
+            >
+              {badge}
+            </Badge>
+          )}
+          <span>{title}</span>
         </h3>
         <Icon
-        className="category-card__icon"
-        name="arrow-right"
+          className="category-card__icon"
+          name="arrow-right"
         />
       </div>
     </a>

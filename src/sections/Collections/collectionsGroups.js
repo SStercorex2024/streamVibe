@@ -174,8 +174,6 @@ const collectionsGroups = [
           },
         ],
         sliderParams: {
-          slidesPerView: 4,
-          slidesPerGroup: 4,
           spaceBetween: 30,
           breakpoints: {
             0: {
@@ -196,6 +194,8 @@ const collectionsGroups = [
               spaceBetween: 20,
             },
             1441: {
+              slidesPerView: 4,
+              slidesPerGroup: 4,
               spaceBetween: 30,
             }
           }
@@ -203,7 +203,7 @@ const collectionsGroups = [
       },
       {
         title: 'Trending Now',
-        categoryItems: [
+        movieItems: [
           {
             title: 'Morbius',
             imgSrc: '/src/assets/images/movies/1.jpg',
@@ -325,7 +325,384 @@ const collectionsGroups = [
             views: '5K',
           },
         ]
-      }
+      },
+      {
+        title: 'New Releases',
+        movieItems: [
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/new-releases/1.jpg',
+            released: {
+              label: '14 April 2023',
+              dateTime: '2023-04-14',
+            }
+          },
+          {
+            title: 'China',
+            imgSrc: '/src/assets/images/movies/2.jpg',
+            released: {
+              label: '22 April 2023',
+              dateTime: '2023-04-22',
+            }
+          },
+          {
+            title: 'Sin City',
+            imgSrc: '/src/assets/images/new-releases/3.jpg',
+            released: {
+              label: '13 April 2023',
+              dateTime: '2023-04-13',
+            }
+          },
+          {
+            title: 'The tomorrow war',
+            imgSrc: '/src/assets/images/new-releases/4.jpg',
+            released: {
+              label: '19 April 2023',
+              dateTime: '2023-04-19',
+            }
+          },
+          {
+            title: 'Misfire',
+            imgSrc: '/src/assets/images/new-releases/5.jpg',
+            released: {
+              label: '11 April 2023',
+              dateTime: '2023-04-11',
+            }
+          },
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/new-releases/1.jpg',
+            released: {
+              label: '14 April 2023',
+              dateTime: '2023-04-14',
+            }
+          },
+          {
+            title: 'China',
+            imgSrc: '/src/assets/images/movies/2.jpg',
+            released: {
+              label: '22 April 2023',
+              dateTime: '2023-04-22',
+            }
+          },
+          {
+            title: 'Sin City',
+            imgSrc: '/src/assets/images/new-releases/3.jpg',
+            released: {
+              label: '13 April 2023',
+              dateTime: '2023-04-13',
+            }
+          },
+          {
+            title: 'The tomorrow war',
+            imgSrc: '/src/assets/images/new-releases/4.jpg',
+            released: {
+              label: '19 April 2023',
+              dateTime: '2023-04-19',
+            }
+          },
+          {
+            title: 'Misfire',
+            imgSrc: '/src/assets/images/new-releases/5.jpg',
+            released: {
+              label: '11 April 2023',
+              dateTime: '2023-04-11',
+            }
+          },
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/new-releases/1.jpg',
+            released: {
+              label: '14 April 2023',
+              dateTime: '2023-04-14',
+            }
+          },
+          {
+            title: 'China',
+            imgSrc: '/src/assets/images/movies/2.jpg',
+            released: {
+              label: '22 April 2023',
+              dateTime: '2023-04-22',
+            }
+          },
+          {
+            title: 'Sin City',
+            imgSrc: '/src/assets/images/new-releases/3.jpg',
+            released: {
+              label: '13 April 2023',
+              dateTime: '2023-04-13',
+            }
+          },
+          {
+            title: 'The tomorrow war',
+            imgSrc: '/src/assets/images/new-releases/4.jpg',
+            released: {
+              label: '19 April 2023',
+              dateTime: '2023-04-19',
+            }
+          },
+          {
+            title: 'Misfire',
+            imgSrc: '/src/assets/images/new-releases/5.jpg',
+            released: {
+              label: '11 April 2023',
+              dateTime: '2023-04-11',
+            }
+          },
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/new-releases/1.jpg',
+            released: {
+              label: '14 April 2023',
+              dateTime: '2023-04-14',
+            }
+          },
+          {
+            title: 'China',
+            imgSrc: '/src/assets/images/movies/2.jpg',
+            released: {
+              label: '22 April 2023',
+              dateTime: '2023-04-22',
+            }
+          },
+          {
+            title: 'Sin City',
+            imgSrc: '/src/assets/images/new-releases/3.jpg',
+            released: {
+              label: '13 April 2023',
+              dateTime: '2023-04-13',
+            }
+          },
+          {
+            title: 'The tomorrow war',
+            imgSrc: '/src/assets/images/new-releases/4.jpg',
+            released: {
+              label: '19 April 2023',
+              dateTime: '2023-04-19',
+            }
+          },
+          {
+            title: 'Misfire',
+            imgSrc: '/src/assets/images/new-releases/5.jpg',
+            released: {
+              label: '11 April 2023',
+              dateTime: '2023-04-11',
+            }
+          }
+        ]
+      },
+      {
+        title: 'Must - Watch Movies',
+        movieItems: [
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/must-watch/1.jpg',
+            duration: '1h 57min',
+            rating: {
+              value: 4.5,
+              views: '20k',
+            }
+          },
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/must-watch/1.jpg',
+            duration: '1h 57min',
+            rating: {
+              value: 4.5,
+              views: '20k',
+            }
+          },
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/must-watch/2.jpg',
+            duration: '1h 57min',
+            rating: {
+              value: 4.5,
+              views: '20k',
+            }
+          },
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/must-watch/3.jpg',
+            duration: '1h 57min',
+            rating: {
+              value: 4.5,
+              views: '20k',
+            }
+          },
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/must-watch/1.jpg',
+            duration: '1h 57min',
+            rating: {
+              value: 4.5,
+              views: '20k',
+            }
+          },
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/must-watch/1.jpg',
+            duration: '1h 57min',
+            rating: {
+              value: 4.5,
+              views: '20k',
+            }
+          },
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/must-watch/2.jpg',
+            duration: '1h 57min',
+            rating: {
+              value: 4.5,
+              views: '20k',
+            }
+          },
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/must-watch/3.jpg',
+            duration: '1h 57min',
+            rating: {
+              value: 4.5,
+              views: '20k',
+            }
+          },
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/new-releases/1.jpg',
+            duration: '1h 57min',
+            rating: {
+              value: 4.5,
+              views: '20k',
+            }
+          },
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/must-watch/1.jpg',
+            duration: '1h 57min',
+            rating: {
+              value: 4.5,
+              views: '20k',
+            }
+          },
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/must-watch/2.jpg',
+            duration: '1h 57min',
+            rating: {
+              value: 4.5,
+              views: '20k',
+            }
+          },
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/must-watch/3.jpg',
+            duration: '1h 57min',
+            rating: {
+              value: 4.5,
+              views: '20k',
+            }
+          },
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/new-releases/1.jpg',
+            duration: '1h 57min',
+            rating: {
+              value: 4.5,
+              views: '20k',
+            }
+          },
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/must-watch/1.jpg',
+            duration: '1h 57min',
+            rating: {
+              value: 4.5,
+              views: '20k',
+            }
+          },
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/must-watch/2.jpg',
+            duration: '1h 57min',
+            rating: {
+              value: 4.5,
+              views: '20k',
+            }
+          },
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/must-watch/3.jpg',
+            duration: '1h 57min',
+            rating: {
+              value: 4.5,
+              views: '20k',
+            }
+          },
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/new-releases/1.jpg',
+            duration: '1h 57min',
+            rating: {
+              value: 4.5,
+              views: '20k',
+            }
+          },
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/must-watch/1.jpg',
+            duration: '1h 57min',
+            rating: {
+              value: 4.5,
+              views: '20k',
+            }
+          },
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/must-watch/2.jpg',
+            duration: '1h 57min',
+            rating: {
+              value: 4.5,
+              views: '20k',
+            }
+          },
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/must-watch/3.jpg',
+            duration: '1h 57min',
+            rating: {
+              value: 4.5,
+              views: '20k',
+            }
+          },
+        ],
+        sliderParams: {
+          spaceBetween: 30,
+          breakpoints: {
+            0: {
+              slidesPerView: 1.6,
+              slidesPerGroup: 1,
+            },
+            481: {
+              slidesPerView: 2,
+              slidesPerGroup: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              slidesPerGroup: 3,
+              spaceBetween: 20,
+            },
+            1024: {
+              spaceBetween: 20,
+            },
+            1441: {
+              slidesPerView: 4,
+              slidesPerGroup: 4,
+              spaceBetween: 30,
+            }
+          }
+        },
+      },
     ]
   },
 ]

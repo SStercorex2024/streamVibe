@@ -10,7 +10,7 @@ const Ratings = (props) => {
     <div className="rating">
       <ul className="rating__list">
         {items.map(({title, ratingValue}, index) => (
-          <li className="rating__item">
+          <li className="rating__item" key={index}>
             <h4 className="rating__title">{title}</h4>
             <RatingView
               value={ratingValue}

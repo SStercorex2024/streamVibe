@@ -1,4 +1,4 @@
-import '/Tags.scss'
+import './Tags.scss'
 
 const Tags = (props) => {
   const {

@@ -14,6 +14,11 @@
 
   &__details {
     &[open] {
+
+      &:has(.accordion__arrow) {
+        padding-block: fluid-to-laptop(6, 4) fluid-to-laptop(24, 20);
+      }
+
       .accordion__title::after {
         rotate: -360deg;
       }

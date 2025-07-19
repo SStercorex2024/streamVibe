@@ -6,6 +6,7 @@ import Accordion from "@/components/Accordion";
 const Seasons = () => {
   return (
     <AccordionGroup
+      className="seasons"
       mode="dark"
       isOrderedList={false}
       isHiddenBottomLine={true}
@@ -21,7 +22,11 @@ const Seasons = () => {
           isArrowButton
           key={index}
         >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, tempore?
+          <ul className="seasons__list">
+            {episodes.map((episode, index) => (
+              <li className="seasons__item" key={index}>{episode.title}</li>
+            ))}
+          </ul>
         </Accordion>
       ))}
     </AccordionGroup>

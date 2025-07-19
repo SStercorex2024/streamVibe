@@ -1,10 +1,25 @@
 .accordion {
   width: 100%;
 
+  &:has(.accordion__arrow) {
+    .accordion__title {
+      padding-right: 0;
+
+      &::after,
+      &::before {
+        display: none;
+      }
+    }
+  }
+
   &__details {
     &[open] {
       .accordion__title::after {
         rotate: -360deg;
+      }
+
+      .accordion__arrow {
+        rotate: 180deg;
       }
 
       & + .accordion__content {
@@ -32,6 +47,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    column-gap: fluid(10, 6);
     min-height: var(--accordionGroupContentHight);
     padding-right: 50px;
     color: inherit;
@@ -57,6 +73,24 @@
     &::after {
       rotate: 90deg;
     }
+  }
+
+  &__subtitle {
+    font-size: 0.75em;
+    font-weight: 500;
+    color: var(--color-gray-60);
+  }
+
+  &__arrow {
+    @include flex-center(true);
+    @include square(fluid(52, 44));
+
+    margin-left: auto;
+    color: var(--color-gray-60);
+    background-color: var(--color-black-08);
+    border: var(--border);
+    border-radius: 50%;
+    transition-duration: var(--transition-duration);
   }
 
   &__content {

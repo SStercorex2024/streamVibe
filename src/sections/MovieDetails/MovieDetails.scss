@@ -13,8 +13,15 @@
 
   @include tablet {
     .movie-details {
-      &__panel--description {
-        order: -2;
+
+      &__panel {
+        &--description {
+          order: -2;
+        }
+
+        &--seasons {
+          order: -3;
+        }
       }
 
       &__info {
@@ -71,6 +78,10 @@
   &__group {
     display: grid;
     row-gap: fluid(14, 10);
+
+    &--large-gap-y {
+      row-gap: fluid(40, 20);
+    }
   }
 
   &__title,

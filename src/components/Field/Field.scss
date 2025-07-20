@@ -23,14 +23,15 @@
   &__control {
     width: 100%;
     height: fluid-to-laptop(67, 53);
-    padding-inline: fluid-to-laptop(20, 16);
+    font-weight: 500;
     color: var(--color-white);
-    background-color: var(--color-black-08);
+    padding-inline: fluid-to-laptop(20, 16);
     border: var(--border);
-    border-radius: var(--border-width-s);
+    border-radius: var(--border-radius-s);
+    background-color: var(--color-black-08);
 
     @include laptop {
-      border-radius: var(--border-width-xs);
+      border-radius: var(--border-radius-xs);
     }
 
     @include hover {
@@ -47,7 +48,7 @@
 
     &::placeholder {
       color: var(--color-gray-60);
-
+      font-weight: 500;
     }
   }
 

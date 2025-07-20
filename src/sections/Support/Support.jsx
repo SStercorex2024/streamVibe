@@ -50,6 +50,7 @@ const Support = () => {
           label="Phone Number"
           placeholder="(99) 999-99-99"
           inputMode="tel"
+          mask="(00) 000-00-00"
         />
         <Field
           className="support__form-cell support__form-cell--wide"

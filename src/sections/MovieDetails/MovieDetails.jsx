@@ -8,7 +8,11 @@ import Icon from "@/components/Icon";
 import Tags from "@/components/Tags";
 import Ratings from "@/components/Ratings";
 
-const MovieDetails = () => {
+const MovieDetails = (props) => {
+  const {
+    seasons
+  } = props
+
   const titleId = 'movie-details-title'
   const customSliderNavigationId = 'movie-card-slider-navigation'
 
@@ -99,6 +103,14 @@ const MovieDetails = () => {
         Detailed movie information
       </h2>
       <div className="movie-details__main">
+        {seasons && (
+          <div className="movie-details__panel movie-details__panel--seasons">
+            <div className="movie-details__group movie-details__group--large-gap-y">
+              <h3 className="h4">Seasons and Episodes</h3>
+            </div>
+            {seasons}
+          </div>
+        )}
         <div className="movie-details__panel movie-details__panel--description">
           <h3 className="movie-details__title">
             Description
@@ -173,7 +185,7 @@ const MovieDetails = () => {
           <Slider
             sliderNavigationMode="rounded"
             isNavigationHiddenMobile={false}
-          hasScrollbarOnMobile={false}
+            hasScrollbarOnMobile={false}
             sliderParams={{
               slidesPerView: 2,
               slidesPerGroup: 2,

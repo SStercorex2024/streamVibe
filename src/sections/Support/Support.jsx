@@ -3,6 +3,7 @@ import {Image} from "minista";
 import Field from "@/components/Field";
 import Checkbox from "@/components/Checkbox";
 import Button from "@/components/Button";
+import Select from "@/components/Select";
 
 const Support = () => {
   const titleId = 'support-title'
@@ -53,6 +54,18 @@ const Support = () => {
           placeholder="(99) 999-99-99"
           inputMode="tel"
           mask="(00) 000-00-00"
+          renderBefore={(buttonClassName) => (
+            <Select
+              label="Phone number prefix"
+              buttonClassName={buttonClassName}
+              options={[
+                {value: +380, isSelected: true,},
+                {value: +48,},
+                {value: +4,},
+                {value: +8,},
+              ]}
+            />
+          )}
         />
         <Field
           className="support__form-cell support__form-cell--wide"

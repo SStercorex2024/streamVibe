@@ -28,7 +28,7 @@ const Select = (props) => {
   return (
     <div
       className="select"
-      data-js-selected=""
+      data-js-select=""
     >
       <label
         className={classNames("select__label", {

@@ -73,7 +73,7 @@ const Select = (props) => {
           id={IDs.dropdown}
           role="listbox"
           aria-labelledby={IDs.label}
-          data-js-select-dropdown
+          data-js-select-dropdown=""
         >
           {options.map((options, index) => {
             const {

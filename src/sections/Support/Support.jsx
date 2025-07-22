@@ -59,10 +59,10 @@ const Support = () => {
               label="Phone number prefix"
               buttonClassName={buttonClassName}
               options={[
-                {value: +380, isSelected: true,},
-                {value: +48,},
-                {value: +4,},
-                {value: +8,},
+                {value: '+380', isSelected: true,},
+                {value: '+48',},
+                {value: '+4',},
+                {value: '+8',},
               ]}
             />
           )}

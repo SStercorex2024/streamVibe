@@ -15,6 +15,7 @@ const Field = (props) => {
     isRequired,
     inputMode,
     mask,
+    renderBefore,
   } = props
 
   const Component = type === 'textarea'
@@ -23,7 +24,7 @@ const Field = (props) => {
 
   const extraAttrs = {}
 
-  if(mask) {
+  if (mask) {
     extraAttrs['data-js-input-mask'] = mask
   }
 
@@ -43,6 +44,7 @@ const Field = (props) => {
       )}
       </label>
       <div className="field__body">
+        {renderBefore?.('field__control')}
         <Component
           className="field__control"
           id={id}

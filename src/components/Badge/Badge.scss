@@ -17,6 +17,7 @@
   }
 
   &--red {
+    display: inline-flex;
     color: var(--color-white);
     background-color: var(--color-red-45);
     border: none;
